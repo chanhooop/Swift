@@ -195,8 +195,17 @@ r1.border = r1.area * 2
 print(r1)
 
 
+// 연산자
+let (x1,y1) = (1,"kim")
+print(x1)
 
+//사칙연산자
+print(10 / 3)
+print(10.0 / 3.0)
 
+// 단항 음수 연산자
+let  one = 1
+let minusone = -one
 
 
 
