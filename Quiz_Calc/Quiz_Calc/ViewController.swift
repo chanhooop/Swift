@@ -105,7 +105,7 @@ class ViewController: UIViewController {
         tfResultMultiple.isUserInteractionEnabled = false
         tfResultDvision.isUserInteractionEnabled = false
         tfResultRest.isUserInteractionEnabled = false
-    }
+    } // readOnly
     
     //계산 함수 //변수이름을 안보여주려면 '_' 를 앞에 붙여준다!!
     func  calculation(_ num1: Int, _ num2: Int) {
@@ -121,7 +121,7 @@ class ViewController: UIViewController {
         }
         
         lblText.text = "참 잘했어요"
-    }
+    } // calculation
     
 
 } // viewController

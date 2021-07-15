@@ -19,6 +19,28 @@ str2 = "Google"
 str2 = "123"
 //str2 = nil
 
-var int1: Int = Int(str2!)!
+//var int1: Int = Int(str2!)!
+//
+//print(int1 + 10)
 
-print(int1 + 10)
+
+// 비교 연산자
+print(1 == 1)
+
+//Tuple 에서의 비교 연산
+print((1,"zebra") < (2,"apple"))
+print((3,"appl") < (3, "bird"))
+
+// 삼항 조건 연산자
+let contentHeight = 40
+let hasHeader = true
+
+let rowHeight = contentHeight + (hasHeader ? 50 : 20)
+print(rowHeight)
+
+
+
+
+
+
+
