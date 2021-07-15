@@ -91,7 +91,7 @@ class ViewController: UIViewController {
     }   //btnCalc
     
     
-    //아무데나 누르면 작동하는 함수
+    //아무데나 누르면 작동하는 함수 // 키보드창 없애기
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true) // 키보드 없애기
         
