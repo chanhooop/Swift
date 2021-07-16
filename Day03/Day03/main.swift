@@ -179,6 +179,91 @@ for i in 0..<score.count{
         break
     }
 }
+//-----------------------------------------
+// 반복문
+
+let names = ["Anna", "Alex", "Brian", "Jack"]
+
+for i in 0..<name.count{
+    print(names[i])
+}
+
+for name in names{
+    print(name)
+}
+
+//dictionary 반복문
+let numberOfLegs = ["spider":8, "Ant":6, "Cat":4]
+
+for (animalName, LegCount) in numberOfLegs{
+    print("\(animalName) have \(LegCount) legs")
+}
+
+let seq1 = 1...5
+for i in seq1{
+    print("\(i) * 5 = \(i*5)")
+}
+
+//.sort 말고 .reversed 도있음
+for i in seq1.reversed(){
+    print("\(i) * 5 = \(i*5)")
+}
+
+// -----------------------------------------
+// stride to, stride through
+let minutes = 60
+let hourInterval = 5
+for tickMark in stride(from: 0, to: minutes, by: hourInterval){
+    print(tickMark)
+    // 55까지 나오고
+}
+for tickMark in stride(from: 0, through: minutes, by: hourInterval){
+    print(tickMark)
+    // 60까지 나온다
+}
+
+//----------------------------------------------
+// while
+var startIndex = 0
+var endIndex = 100
+var sum = 0
+var evensum = 0
+
+while startIndex <= endIndex{
+    sum += startIndex
+    startIndex += 1
+}
+print(sum)
+// 1부터 100까지의 짝수의 합 (단, if문 사용금지
+
+while startIndex <= endIndex{
+    sum += evensum
+    startIndex += 1
+    evensum += startIndex % 2
+}
+print(sum)
+
+//--------------------------------------------
+// 입력한 한 자릿수 정수의 합을 구하는 프로그램을 작성하라.
+var input = 1234
+var result = 0
+while input != 0 {
+    result += input % 10
+    input = input / 10
+}
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
