@@ -111,6 +111,60 @@ print(myName2 as Any)
 
 
 
+// 기본적으로 swift에서 if for collection array func 이 제일 중요
+
+
+// collection : 여러값들을 묶어서 하나의 변수로 사용
+/*
+ Array : 순서가 있는 리스트 컬렉션
+ Dictionary : Key와 Value의 쌍으로 이루어진 컬렉션
+ Set : 순서가 없고 멤버가 유일한 컬렉션, 집합연산
+ */
+
+// Array
+// 빈 Array 생성
+// var intVariable: Array<Int> = Array<Int>()
+//var intVariable: [Int] = [Int]()
+var intVariable: [Int] = []  // -->  세가지 방법중 이렇게 가장 많이 사용
+intVariable.append(1)
+intVariable.append(10)
+intVariable.append(100)
+print(intVariable)
+
+print(intVariable.contains(100))  // --> true or false 값으로 출력
+print(intVariable.contains(90))
+
+print(intVariable[0])
+print(intVariable[0...2][0]) // -> 0~2번째 데이터중에 0번째값 출력
+
+intVariable.remove(at: 0) // ->제거
+intVariable.removeLast()
+intVariable.removeAll()
+print(intVariable)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
