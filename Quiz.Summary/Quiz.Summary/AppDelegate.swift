@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Quiz: 국어,영어,수학 점수를 입력 받아 Summary 출력하기
+//  Quiz.Summary
 //
 //  Created by 이찬호 on 2021/07/16.
 //
