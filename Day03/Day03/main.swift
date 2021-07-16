@@ -63,6 +63,134 @@ if isCar, isNew{
     print("Old Car")
 }
 
+print("========================================")
+
+
+// Switch 조건문
+// Befor Switch
+let personAge = 14
+if personAge < 14{
+    print("baby")
+}else if personAge < 3{
+    print("tddler")
+}else if personAge < 5 {
+    print("preschooler")
+}else if personAge < 13{
+    print("gradeschooler")
+}else if personAge < 18{
+    print("teen")
+}else{
+    print("adult")
+}
+
+// After usin Switch statement
+switch personAge{
+case 0..<1:
+    print("baby")
+case 1..<3:
+    print("tddler")
+case 3..<5:
+    print("preschooler")
+case 5..<13:
+    print("gradeschooler")
+case 13..<18:
+    print("teen")
+default:
+    print("adult")
+}
+//---------------------------
+let someInteger = 123456
+
+switch someInteger{
+case 0:
+    print("zero")
+case 1..<100:
+    print("1~99")
+case 101...Int.max:
+    print("over 100")
+default:
+    print("unknown")
+}
+//--------------------------
+print(Int.max) // 정수의 최댓값
+
+let aCharacter: Character = "a"
+
+switch aCharacter{
+case "a", "A":
+    print("The letter A")
+default:
+    print("Not the letter A")
+}
+
+//----------------------------
+// 국어, 영어, 수학 점수로 총점 평균을 구하고 등급을 정하기
+let name = "유비"
+let kor = 91
+let eng = 97
+let math = 95
+
+var tot = 0
+var avg: Double = 0
+
+tot = kor + eng + math
+avg = Double(tot) / 3
+
+// 점수 등급 출력  -  1
+var grade: String
+// if문을 이용한 등급 출력
+if avg >= 90{
+    grade = "a"
+}else if avg >= 80{
+    grade = "b"
+}else if avg >= 70 {
+    grade = "c"
+}else{
+    grade = "e"
+}
+print(grade)
+
+// switch case 문을 이용한 등급 출력
+switch avg{
+case 90...100:
+    grade = "a"
+case 80...90:
+    grade = "b"
+default:
+    grade = "e"
+}
+print(grade)
+
+// 삼항 연산자 등급 출력
+grade = avg >= 90 ? "A" :
+        avg >= 80 ? "B" :
+        avg >= 70 ? "C" : "e"
+print(grade)
+
+// 배열과 반복문
+print("배열과 반복믄")
+var score = [90,80,70,60,0]
+var level = ["a","b","c","d","e"]
+
+for i in 0..<score.count{
+    if avg >= Double(score[i]){
+        grade = level[i]
+        print(grade)
+        break
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
