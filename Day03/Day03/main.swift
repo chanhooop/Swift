@@ -253,7 +253,26 @@ while input != 0 {
 }
 print(result)
 
+//--------------------------------------------------------
 
+print("Enter an integer(0~9):", terminator: "") //print 문 이어서 출력
+var repNum = 0
+var remainder = 0
+var sumNo = 0
+
+var inpNum = Int(readLine()!)
+
+if let _: Int = inpNum{
+    repNum = inpNum!
+    while repNum != 0{
+        remainder = repNum % 10
+        sumNo += remainder
+        repNum /= 10
+    }
+    print("Sum of digits = \(sumNo)")
+}else{
+    print("Input value is wrong!")
+}
 
 
 

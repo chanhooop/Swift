@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfScore: UITextField!
     @IBOutlet weak var tfSummary: UITextField!
     
-        var classnum = 0
+        var arrayNum = 0
         var className = ["국어 점수", "영어 점수", "수학 점수", "요약"]
         var score: [Int] = []
     
@@ -27,26 +27,20 @@ class ViewController: UIViewController {
     @IBAction func btnCalc(_ sender: UIButton) {
         guard let strScore = tfScore.text else { return }
         
-        var sum: Int
-        
-        for i in score {
-            
-        }
-        
-        classnum += 1
-        if classnum == className.count {
-            classnum = 0
-            lblClassName.text = className[classnum]
+        arrayNum += 1
+        if arrayNum == className.count {
+            arrayNum = 0
+            lblClassName.text = className[arrayNum]
             score.removeAll()
             
-        }else if classnum == className.count - 1 {
+        }else if arrayNum == className.count - 1 {
             tfScore.isHidden = true
             tfSummary.text = "총점은어쩌구"
             
         }
 
             tfScore.text = ""
-            lblClassName.text = className[classnum]
+            lblClassName.text = className[arrayNum]
             score.append(Int(strScore)!)
     } //btnCalc
     
