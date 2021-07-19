@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblPickerTime: UILabel!
     
     let intervar = 1.0  // --> 1초
-    let timeSelector: Selector = #selector(ViewController.updateTime)
+    let timeSelector: Selector = #selector(ViewController.updateTime) // updateTime 은 @objc func 으로 만들어 줘야함
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeDatePicker(_ sender: UIDatePicker) {
+        let datePickerView = sender
+        //class 생성s
+        let formatter = DateFormatter()
+        
+        formatter.locale = Locale(identifier: "ko")
+        formatter.dateFormat = "yyyy-MM-dd EEE a hh:mm" // 24시간용 시간은 HH
+        lblPickerTime.text = "선택시간 : \(formatter.string(from: datePickerView.date))"
         
     }
     
