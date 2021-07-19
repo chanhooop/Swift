@@ -85,7 +85,38 @@ func addRange(start: Int, end: Int) -> Int {
 
 print(addRange(start:1, end:100))
 print("1부터 100까지의 합은 \(addRange(start: 1, end: 100))입니다.")
-//
+
+
+// -----------------------------------------------------------
+
+// overloading : 함수의 이름은 중복되도 parameter의 갯수로 구분이 가능
+
+// 도형의 면적과 둘레를 구하는 함수
+// 원
+func shape(_ r: Double){
+    let pi = 3.14
+    let area = pi * r * r
+    let border = 2 * pi * r
+    print("원 : \(area),\(border)")
+}
+
+// 직사각형
+func shape(_ w: Int, _ h: Int) {
+    let area = w * h
+    let border = (w + h) * 2
+    print("직사각형 : \(area),\(border)")
+}
+// 직각 삼각형
+func shape(_ p: Int, _ b: Int, _ h: Int) {
+    let area = p * b / 2
+    let border = p + b + h
+    print("직각 삼각형: \(area),\(border)")
+}
+
+shape(5)
+shape(5,6)
+shape(5,7,8)
+
 
 
 
