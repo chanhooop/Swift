@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         let formatter = DateFormatter()
         
         formatter.locale = Locale(identifier: "ko")
-        formatter.dateFormat = "yyyy-MM-dd,EEE a hh:mm:ss"   //EEE 는 요일
+        formatter.dateFormat = "yyyy-MM-dd,EEE a hh:mm"   //EEE 는 요일
         lblCurruntTime.text = "현재시간: \(formatter.string(from: date as Date))"
     }
 
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         formatter.dateFormat = "yyyy-MM-dd EEE a hh:mm" // 24시간용 시간은 HH
         lblPickerTime.text = "선택시간 : \(formatter.string(from: datePickerView.date))"
         
-        if lblCurruntTime == lblPickerTime {
+        if updateTime() == datePickerView.date {
             view.backgroundColor = UIColor.red
         }else{
             view.backgroundColor = UIColor.white
