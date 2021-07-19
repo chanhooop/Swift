@@ -117,6 +117,53 @@ shape(5)
 shape(5,6)
 shape(5,7,8)
 
+/*
+ Class : 전통적인 OOP관점에서의 클래스
+ - 단일 상속
+ - property
+ - constructor
+ - method
+ - 참조 타입 선언 (Call by refernece)
+ - ios는 클라스로 구성되어있다
+ 
+ 
+ Struct
+ - 상속 불가
+ - property
+ - constructor
+ - method
+ - 값 타입 선언(Call by value)
+ 
+ */
+
+// -------------------------------------------------------
+// Class와 Struct의 비교
+struct  ValueType {
+    var property = 1
+}
+
+class ReferenceType{
+    var property = 1
+}
+
+//
+let firstStructInstance: ValueType = ValueType()
+var secondStructInstance = firstStructInstance
+secondStructInstance.property = 2
+
+print("first : \(firstStructInstance.property)")
+print("second : \(secondStructInstance.property)")
+
+
+let firstClassInstancne: ReferenceType = ReferenceType()
+var secondClassInstance = firstStructInstance
+secondStructInstance.property = 2
+
+print("first : \(firstClassInstancne.property)")
+print("second : \(secondClassInstance.property)")
+
+
+// -------------------------------------------------------
 
 
 
