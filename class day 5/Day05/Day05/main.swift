@@ -206,11 +206,14 @@ print(sumResult)
 
 //--------------------------------------------------------------------------
 
+// 난수 추출
+print(Int.random(in: 1..<10))
 
-
-
-
-
+func genNum() -> String {
+    return String(Int.random(in: 1..<10))
+}
+print(genNum())
+print(genNum())
 
 
 
