@@ -109,7 +109,6 @@ class Shape{
     init(_ num:Int, _ num2:Int, _ num3:Int) {
         print("직각삼각형의 둘레는 \(num + num2 + num3)이고 면적은 \(num * num2 / 2)입니다.")
     }
-    
     func input(_ num:Double) {
         print("원의 면적은 \(2*pi*num)")
     }
@@ -163,6 +162,49 @@ let sh4: Shape1 = Shape1()
 sh4.input(r: 5.0)
 
 let sh5: Shape1 = Shape1(radius: 5.0)
+
+
+//--------------------------------------------------------------------
+/*
+            Extension!!!! 중요
+- 구조체, 클래스, 프로토콜 타입에 새로운 기능을 추가할 수 있는 기능.
+- 기존에 존재하는 기능은 재정의 할 수 없다.
+- Deligate 와 함께 다닌다.
+- class와 따로 존재하는게 익스텐션
+ */
+
+extension Int{
+    var isEven: Bool{
+        return self % 2 == 0
+    }
+    var isOdd: Bool{
+        return self % 2 == 1
+    }
+}
+
+print(1.isEven)
+
+//--------------------------------------------------------------------------
+
+// Closure
+
+//함수
+func sumFunction(a: Int, b: Int) -> Int{
+    return a + b
+}
+
+var sumResult: Int = sumFunction(a: 10, b: 20)
+print(sumResult)
+
+//closure
+var sumClosure: (Int, Int) -> Int = {(a: Int, b: Int) -> Int in
+    return a + b
+}
+
+sumResult = sumClosure(10,20)
+print(sumResult)
+
+//--------------------------------------------------------------------------
 
 
 
