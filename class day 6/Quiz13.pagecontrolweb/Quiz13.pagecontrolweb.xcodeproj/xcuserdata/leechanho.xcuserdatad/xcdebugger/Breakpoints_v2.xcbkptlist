@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0E56DAEA-760E-428C-96F7-A74DF33F8175"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BE9FAFC-0AA3-4729-9872-1865C6526B9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz13.pagecontrolweb/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2BE9FAFC-0AA3-4729-9872-1865C6526B9D - b87f33515dc14bf6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz13_pagecontrolweb.ViewController.pageControl.getter : Swift.Optional&lt;__C.UIPageControl&gt;"
+                  moduleName = "Quiz13.pagecontrolweb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leechanho/Desktop/Chanho/Swift/Swift/class%20day%206/Quiz13.pagecontrolweb/Quiz13.pagecontrolweb/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2BE9FAFC-0AA3-4729-9872-1865C6526B9D - e1598b410bb0a7c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz13_pagecontrolweb.ViewController.pageControl.setter : Swift.Optional&lt;__C.UIPageControl&gt;"
+                  moduleName = "Quiz13.pagecontrolweb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leechanho/Desktop/Chanho/Swift/Swift/class%20day%206/Quiz13.pagecontrolweb/Quiz13.pagecontrolweb/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "2BE9FAFC-0AA3-4729-9872-1865C6526B9D - 9a7b408aef3ffa3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz13_pagecontrolweb.ViewController.pageControl.modify : Swift.Optional&lt;__C.UIPageControl&gt;"
+                  moduleName = "Quiz13.pagecontrolweb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leechanho/Desktop/Chanho/Swift/Swift/class%20day%206/Quiz13.pagecontrolweb/Quiz13.pagecontrolweb/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "2BE9FAFC-0AA3-4729-9872-1865C6526B9D - 1db300af559880c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz13_pagecontrolweb.ViewController.pageControl.modify : Swift.Optional&lt;__C.UIPageControl&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Quiz13.pagecontrolweb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leechanho/Desktop/Chanho/Swift/Swift/class%20day%206/Quiz13.pagecontrolweb/Quiz13.pagecontrolweb/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "2BE9FAFC-0AA3-4729-9872-1865C6526B9D - ee6b04854672d267"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz13_pagecontrolweb.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Quiz13_pagecontrolweb.ViewController"
+                  moduleName = "Quiz13.pagecontrolweb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leechanho/Desktop/Chanho/Swift/Swift/class%20day%206/Quiz13.pagecontrolweb/Quiz13.pagecontrolweb/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "335">
+               </Location>
+               <Location
+                  uuid = "2BE9FAFC-0AA3-4729-9872-1865C6526B9D - 2d9089ac0dbc9299"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz13_pagecontrolweb.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Quiz13_pagecontrolweb.ViewController&gt;"
+                  moduleName = "Quiz13.pagecontrolweb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leechanho/Desktop/Chanho/Swift/Swift/class%20day%206/Quiz13.pagecontrolweb/Quiz13.pagecontrolweb/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "282">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

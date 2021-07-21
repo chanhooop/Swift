@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerWeb: UIPickerView!
     @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
-    var arrayWebSiteName = ["네이버","구글","다음"]
-    var arrayWebSiteAddress = ["www.naver.com","www.google.com","www.daum.net"]
+    //튜플사용한 배열
+    var arrayWebSiteName:[(String,String)] = [("네이버","www.naver.com"),("구글","www.google.com"),("다음","www.daum.net")]
     
     var maxArrayNum = 0
     let viewColumn = 1
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        maxArrayNum = arrayWebSiteAddress.count
+        maxArrayNum = arrayWebSiteName.count
         
         //피커뷰 설정
         pickerWeb.dataSource = self
@@ -70,12 +70,13 @@ extension ViewController: UIPickerViewDelegate{
     // pickerview에 Title 입히기(title 치면나옴)
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
        // return arrayWebSiteAddress[row]
-        return arrayWebSiteName[row]
+        return arrayWebSiteName[row].0
     }
     
 //PickerView에 Image 선택 (select 치면나옴)
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectAddress = arrayWebSiteAddress[row]
+        print(arrayWebSiteName[row].1)
+        selectAddress = arrayWebSiteName[row].1
         print(selectAddress)
         loadWebPage(url: checkUrl(url: selectAddress))
     }
