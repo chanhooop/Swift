@@ -67,5 +67,4 @@ extension ViewController: UIPickerViewDelegate{
         imageView.image = imageArray[row]
     }
     
-    
 }
