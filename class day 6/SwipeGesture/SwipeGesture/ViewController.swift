@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var imgRight = [UIImage]()
     var imgUp = [UIImage]()
     var imgDown = [UIImage]()
+    
     var numOfTouches = 2 // 시뮬레이터에서는 두손가락이 max
     
     override func viewDidLoad() {

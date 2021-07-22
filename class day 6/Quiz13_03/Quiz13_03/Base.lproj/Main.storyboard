@@ -32,11 +32,17 @@
                                     <action selector="pageAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="eLJ-Kh-Gvt"/>
                                 </connections>
                             </pageControl>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="D1K-ce-uK5">
+                                <rect key="frame" x="189" y="372" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemGreenColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="myActivityIndicator" destination="D1K-ce-uK5" id="9K3-fY-uoT"/>
                         <outlet property="myWebView" destination="pXJ-uL-s8h" id="iMp-BL-skW"/>
                         <outlet property="pageControl" destination="O0E-EI-ATx" id="NXA-Lk-PwF"/>
                     </connections>
@@ -49,6 +55,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
