@@ -14,9 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         imgPinch.image = UIImage(named: "flower_01.png")
+        
         // Pinch Setup
         let pinch = UIPinchGestureRecognizer(target: self, action: #selector(ViewController.doPinch(_ :)))
-        self.view.addGestureRecognizer(pinch)  // view. 은 화면 전체에 대한 적용을 할때
+        //self.view.addGestureRecognizer(pinch)  // view. 은 화면 전체에 대한 적용을 할때
+        self.view.addGestureRecognizer(pinch)
     }
     
     @objc func doPinch(_ pinch: UIPinchGestureRecognizer){
