@@ -69,6 +69,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail View" id="RaP-T5-bEC"/>
+                    <connections>
+                        <outlet property="lblItem" destination="8Dr-4c-0Qh" id="EXX-xE-yZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6z-1l-Vby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,12 +95,18 @@
                                 <rect key="frame" x="192" y="230" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="add"/>
+                                <connections>
+                                    <action selector="btnAddItem:" destination="7tW-dl-SG1" eventType="touchUpInside" id="S1v-DW-qqJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k39-5R-bIo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add View" id="rdd-nB-vqC"/>
+                    <connections>
+                        <outlet property="tfAddItem" destination="zjP-xR-22x" id="FIc-QI-2ld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HC-lC-xLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

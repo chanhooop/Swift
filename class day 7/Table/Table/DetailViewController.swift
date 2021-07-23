@@ -8,13 +8,21 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var lblItem: UILabel!
+    
+    var receiveItem = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        lblItem.text = receiveItem
     }
     
+    // 함수로 값이 들어오게 해서 변수로 넣어주는 방식
+    func receiveItems(_ item: String){
+        receiveItem = item
+    }
 
     /*
     // MARK: - Navigation
@@ -26,4 +34,4 @@ class DetailViewController: UIViewController {
     }
     */
 
-}
+} // DetailViewController
