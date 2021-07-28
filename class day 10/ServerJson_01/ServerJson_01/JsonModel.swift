@@ -17,7 +17,7 @@ class JsonModel: NSObject{
     
     func downloadItems(){
         let url: URL = URL(string: urlPath)!
-        let defaultSession = Foundation.URLSession(configuration: URLSessionConfiguration.default)
+        let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
         let task = defaultSession.dataTask(with: url){(data, response, error) in
             if error != nil{
                 print("Failed to download data")
@@ -33,12 +33,12 @@ class JsonModel: NSObject{
     func parseJSON(_ data: Data){
         var jsonResult = NSArray()
         do{
-            jsonResult = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSArray
+            jsonResult = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSArray  // json파일을 nsarray배열로 바꿔줌
         }catch let error as NSError{
             print(error)
         }
         
-        var jsonElement = NSDictionary()
+        var jsonElement = NSDictionary() 
         let locations = NSMutableArray()
         
         for i in 0..<jsonResult.count{

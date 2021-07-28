@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     // 옛날 방식
     @IBAction func btnImage1(_ sender: UIButton) {
-        let url: URL = URL(string: "http://192.168.0.78:8080/flower_01.png")!
+        let url: URL = URL(string: "http://192.168.1.21:8080/ios/flower_01.png")!
         let defaultSession = Foundation.URLSession(configuration: URLSessionConfiguration.default)
         
         let task = defaultSession.dataTask(with: url){(data, response, error) in
@@ -38,8 +38,8 @@ class ViewController: UIViewController {
             }
             
         }
-
-        }
+        task.resume()
+    }
     func getDocumentDirectory() -> URL{
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
@@ -47,9 +47,10 @@ class ViewController: UIViewController {
     
     
     
+    
     // 요즘방식
     @IBAction func btnImage2(_ sender: UIButton) {
-        let url = URL(string: "http://192.168.0.78:8080/flower_02.png")
+        let url = URL(string: "http://192.168.1.21:8080/ios/flower_02.png")
         let data = try? Data(contentsOf: url!)
         imgView.image = UIImage(data: data!)
     }
