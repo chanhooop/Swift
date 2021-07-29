@@ -13,7 +13,10 @@ protocol JsonModelProtocol {
 
 class JsonModel: NSObject{
     var delegate: JsonModelProtocol!
-    let urlPath = "http://192.168.1.21:8080/ios/student.json"
+    var urlPath = ShareVar().url("student.json")
+    //let urlPath = ShareVar.url("student.json")
+    
+    //let urlPath = "http://192.168.1.21:8080/ios/student.json"
     
     func downloadItems(){
         let url: URL = URL(string: urlPath)!

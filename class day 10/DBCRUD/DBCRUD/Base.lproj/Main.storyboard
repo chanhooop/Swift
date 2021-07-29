@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="1ey-zv-UBt" kind="show" identifier="sgDetail" trigger="accessoryAction" id="9vt-gW-YOc"/>
+                                    <segue destination="1ey-zv-UBt" kind="show" identifier="sgDetail" id="H1V-aT-wuy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -213,6 +213,9 @@
                                 <rect key="frame" x="136" y="578" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="수정"/>
+                                <connections>
+                                    <action selector="btnEdit:" destination="1ey-zv-UBt" eventType="touchUpInside" id="rJt-nM-qrg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ8-JY-hP5">
                                 <rect key="frame" x="228" y="578" width="30" height="30"/>
@@ -220,12 +223,21 @@
                                 <state key="normal" title="삭제">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnDelete:" destination="1ey-zv-UBt" eventType="touchUpInside" id="8Qy-iK-jms"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ptf-dY-ZFG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="2sO-cJ-T5s"/>
+                    <connections>
+                        <outlet property="tvCode" destination="p9I-Qq-Hla" id="cWI-kp-yQW"/>
+                        <outlet property="tvDept" destination="ooF-eJ-hMx" id="NFR-0q-xts"/>
+                        <outlet property="tvName" destination="CQl-fk-5Kn" id="WnE-H1-BsT"/>
+                        <outlet property="tvPhone" destination="8xY-BA-6WO" id="BNs-wC-xHs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cw-El-OhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

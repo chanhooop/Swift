@@ -1,19 +1,18 @@
 //
-//  QueryModel.swift
+//  SelectModel.swift
 //  DBCRUD
 //
-//  Created by 이찬호 on 2021/07/28.
+//  Created by 이찬호 on 2021/07/29.
 //
 
 import Foundation
-
-protocol QueryModelProtocol {
+protocol SelectModelProtocol {
     func itemDownloaded(items: NSArray)
 }
 
-class QueryModel: NSObject{
-    var delegate: QueryModelProtocol!
-    let urlPath = ShareVar().url(fileName: "student_query_ios.jsp")
+class SelectModel: NSObject{
+    var delegate: SelectModelProtocol!
+    let urlPath = ShareVar().url(fileName: "studentselect_ios.jsp")
     
     func downloadItems(){
         let url: URL = URL(string: urlPath)!

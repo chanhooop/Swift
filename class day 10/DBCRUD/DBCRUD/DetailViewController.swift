@@ -7,15 +7,65 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+var strScode = ""
 
+class DetailViewController: UIViewController {
+    @IBOutlet weak var tvCode: UITextField!
+    @IBOutlet weak var tvName: UITextField!
+    @IBOutlet weak var tvDept: UITextField!
+    @IBOutlet weak var tvPhone: UITextField!
+    
+    var feedItem: NSArray = NSArray()
+    
+    func receiveItem(_ strcode: String){
+        strScode = strcode
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let selectModel = SelectModel()
+        selectModel.delegate = self
+        selectModel.downloadItems()
     }
     
 
+    @IBAction func btnEdit(_ sender: UIButton) {
+        let code = tvCode.text
+        let name = tvName.text
+        let dept = tvDept.text
+        let phone = tvPhone.text
+
+        let insertModel = InsertModel()
+        let result = insertModel.InsertItems(code: code!, name: name!, dept: dept!, phone: phone!)
+
+        if result{
+            let resultAllert = UIAlertController(title: "완료", message: "입력이 되었습니다.", preferredStyle: .alert)
+            let onAction = UIAlertAction(title: "OK", style: .default, handler: {ACTION in
+                self.navigationController?.popViewController(animated: true)
+            })
+
+            resultAllert.addAction(onAction)
+            present(resultAllert, animated: true, completion: nil)
+
+        }else{
+            let resultAllert = UIAlertController(title: "실패", message: "에러가 발생 되었습니다.", preferredStyle: .alert)
+            let onAction = UIAlertAction(title: "OK", style: .default, handler: {ACTION in
+                self.navigationController?.popViewController(animated: true)
+            })
+
+            resultAllert.addAction(onAction)
+            present(resultAllert, animated: true, completion: nil)
+        }
+
+    }
+    @IBAction func btnDelete(_ sender: UIButton) {
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +76,13 @@ class DetailViewController: UIViewController {
     }
     */
 
+    
+}
+
+
+extension DetailViewController: SelectModelProtocol{
+    func itemDownloaded(items: NSArray) {
+        feedItem = items
+    }
+    
 }

@@ -1,19 +1,18 @@
 //
-//  InsertModel.swift
+//  UpdateModel.swift
 //  DBCRUD
 //
-//  Created by 이찬호 on 2021/07/28.
+//  Created by 이찬호 on 2021/07/29.
 //
 
 import Foundation
 
+class UpdateModel: NSObject{
 
-class InsertModel: NSObject{
+    var urlPath = ShareVar().url(fileName: "studentUpdate_ios.jsp")
 
-    var urlPath = ShareVar().url(fileName: "studentInsert_ios.jsp")
-    //var urlPath = "http://192.168.1.21:8080/ios/studentInsert_ios.jsp"
     
-    func InsertItems(code: String, name: String, dept: String, phone: String) -> Bool{
+    func UpdateItems(code: String, name: String, dept: String, phone: String) -> Bool{
         var result: Bool = true
         let urlAdd = "?code=\(code)&name\(name)&dept=\(dept)&phone=\(phone)"
         urlPath = urlPath + urlAdd
@@ -27,10 +26,10 @@ class InsertModel: NSObject{
         let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
         let task = defaultSession.dataTask(with: url){(data, response, error) in
             if error != nil{
-                print("Failed to Insert data")
+                print("Failed to Update data")
                 result = false
             }else{
-                print("Data is inserted")
+                print("Data is Updated")
                 result = true
             }
             
@@ -38,5 +37,4 @@ class InsertModel: NSObject{
         task.resume()
         return result
     }
-    
 }

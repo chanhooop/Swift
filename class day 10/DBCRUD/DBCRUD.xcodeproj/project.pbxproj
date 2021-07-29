@@ -18,6 +18,9 @@
 		9F59602926B130A300187E6E /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59602826B130A300187E6E /* DBModel.swift */; };
 		9F59602B26B130DC00187E6E /* QueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59602A26B130DC00187E6E /* QueryModel.swift */; };
 		9F59602D26B1347400187E6E /* InsertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59602C26B1347400187E6E /* InsertModel.swift */; };
+		9F59602F26B1BB7400187E6E /* UpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59602E26B1BB7400187E6E /* UpdateModel.swift */; };
+		9F59603326B1BF3700187E6E /* ShareVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59603226B1BF3700187E6E /* ShareVar.swift */; };
+		9F59603526B1C6D100187E6E /* SelectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59603426B1C6D100187E6E /* SelectModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		9F59602826B130A300187E6E /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
 		9F59602A26B130DC00187E6E /* QueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModel.swift; sourceTree = "<group>"; };
 		9F59602C26B1347400187E6E /* InsertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertModel.swift; sourceTree = "<group>"; };
+		9F59602E26B1BB7400187E6E /* UpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateModel.swift; sourceTree = "<group>"; };
+		9F59603226B1BF3700187E6E /* ShareVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVar.swift; sourceTree = "<group>"; };
+		9F59603426B1C6D100187E6E /* SelectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +76,17 @@
 				9F59601026B12BD500187E6E /* SceneDelegate.swift */,
 				9F59602226B12E0700187E6E /* AddViewController.swift */,
 				9F59602426B12E2000187E6E /* DetailViewController.swift */,
-				9F59602826B130A300187E6E /* DBModel.swift */,
 				9F59602626B12E2C00187E6E /* TableViewController.swift */,
 				9F59601426B12BD500187E6E /* Main.storyboard */,
 				9F59601726B12BD600187E6E /* Assets.xcassets */,
 				9F59601926B12BD600187E6E /* LaunchScreen.storyboard */,
 				9F59601C26B12BD600187E6E /* Info.plist */,
+				9F59602826B130A300187E6E /* DBModel.swift */,
 				9F59602A26B130DC00187E6E /* QueryModel.swift */,
 				9F59602C26B1347400187E6E /* InsertModel.swift */,
+				9F59602E26B1BB7400187E6E /* UpdateModel.swift */,
+				9F59603226B1BF3700187E6E /* ShareVar.swift */,
+				9F59603426B1C6D100187E6E /* SelectModel.swift */,
 			);
 			path = DBCRUD;
 			sourceTree = "<group>";
@@ -153,6 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F59600F26B12BD500187E6E /* AppDelegate.swift in Sources */,
+				9F59603326B1BF3700187E6E /* ShareVar.swift in Sources */,
+				9F59602F26B1BB7400187E6E /* UpdateModel.swift in Sources */,
+				9F59603526B1C6D100187E6E /* SelectModel.swift in Sources */,
 				9F59601126B12BD500187E6E /* SceneDelegate.swift in Sources */,
 				9F59602D26B1347400187E6E /* InsertModel.swift in Sources */,
 				9F59602326B12E0700187E6E /* AddViewController.swift in Sources */,

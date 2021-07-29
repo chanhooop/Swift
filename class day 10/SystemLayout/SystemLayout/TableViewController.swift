@@ -1,24 +1,18 @@
 //
 //  TableViewController.swift
-//  DBCRUD
+//  SystemLayout
 //
-//  Created by 이찬호 on 2021/07/28.
+//  Created by 이찬호 on 2021/07/29.
 //
 
 import UIKit
 
 class TableViewController: UITableViewController {
-    
-    @IBOutlet var listTableView: UITableView!
-    
-    var feedItem: NSArray = NSArray()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let queryModel = QueryModel()
-//        queryModel.delegate = self
-//        queryModel.downloadItems()
+        self.title = Share.userID
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,41 +20,28 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        let queryModel = QueryModel()
-        queryModel.delegate = self
-        queryModel.downloadItems()
-    }
-    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return feedItem.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-                                                        //셀을 디자인했을때는 as! [셀 클라스명]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        let item: DBModel = feedItem[indexPath.row] as! DBModel
-        
-        cell.textLabel?.text = "성명: \(item.sname!)"
-        cell.detailTextLabel?.text = "학번: \(item.scode!)"
-        
+
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -97,33 +78,14 @@ class TableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "sgDetail"{
-            // 셀정보 가져오는부분
-            let cell = sender as! UITableViewCell
-            let indexPath = self.listTableView.indexPath(for: cell)
-            let item: DBModel = feedItem[indexPath!.row] as! DBModel
-            
-            let detailView = segue.destination as! DetailViewController
-            detailView.receiveItem(String(item.scode!))
-        }
-
     }
+    */
 
-
-}
-
-
-extension TableViewController: QueryModelProtocol{
-    func itemDownloaded(items: NSArray) {
-        feedItem = items
-        self.listTableView.reloadData()
-    }
-    
 }
