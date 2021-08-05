@@ -44,10 +44,10 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
-                                //셀정의 했을때는 아웃렛ㅇ이들어간 클래스를 써주어야한다 "as! TableViewCell"
+                                //셀 커스텀정의 했을 때는 아웃렛ㅇ이들어간 클래스를 써주어야한다 "as! TableViewCell"
 
         // Configure the cell...
-        let url = URL(string: "http://192.168.1.21:8080/ios/clock.png")
+        let url = URL(string: "http://192.168.2.16:8080/ios/clock.png")
         let data = try? Data(contentsOf: url!)
 
         

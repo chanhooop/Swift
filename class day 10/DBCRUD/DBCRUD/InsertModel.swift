@@ -10,13 +10,14 @@ import Foundation
 
 class InsertModel: NSObject{
 
-    var urlPath = ShareVar().url(fileName: "studentInsert_ios.jsp")
+    var urlPath = ShareVar().url(fileName: "studentinsert_ios.jsp")
     //var urlPath = "http://192.168.1.21:8080/ios/studentInsert_ios.jsp"
     
     func InsertItems(code: String, name: String, dept: String, phone: String) -> Bool{
         var result: Bool = true
-        let urlAdd = "?code=\(code)&name\(name)&dept=\(dept)&phone=\(phone)"
+        let urlAdd = "?code=\(code)&name=\(name)&dept=\(dept)&phone=\(phone)"
         urlPath = urlPath + urlAdd
+        print(urlPath)
         
         //한글 url encoding
         urlPath = urlPath.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
@@ -36,6 +37,7 @@ class InsertModel: NSObject{
             
         }
         task.resume()
+        
         return result
     }
     

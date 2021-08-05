@@ -9,6 +9,7 @@ import UIKit
 
 var list = ["유비","관우","장비","조조","여포","동탁","초선","손견","장양","손책"]
 
+
 class ViewController: UIViewController {
     // Cell이 아니라 Clloection View를 연결 시켜야한다!!
     @IBOutlet weak var colletionView: UICollectionView!

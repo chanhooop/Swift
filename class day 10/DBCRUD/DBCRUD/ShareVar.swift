@@ -8,7 +8,7 @@
 import Foundation
 class ShareVar {
     func url(fileName: String) -> String{
-        let url = "http://172.20.10.8:8080/ios/\(fileName)"
+        let url = "http://192.168.219.123:8080/ios/\(fileName)"
         return url
     }
 }

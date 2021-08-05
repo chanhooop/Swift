@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     
     // 요즘방식
     @IBAction func btnImage2(_ sender: UIButton) {
-        let url = URL(string: "http://192.168.1.21:8080/ios/flower_02.png")
+        let url = URL(string: "http://192.168.2.16:8080/ios/flower_02.png")
         let data = try? Data(contentsOf: url!)
         imgView.image = UIImage(data: data!)
     }

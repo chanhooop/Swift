@@ -7,7 +7,7 @@
 
 import UIKit
 
-var imageFileName = ["flower01.png", "flower02.png", "flower03.png", "flower04.png", "flower05.png", "flower06.png",]
+var imageFileName = ["flower01.png", "flower02.png", "flower03.png", "flower04.png", "flower05.png", "flower06.png"]
 
 class DetailViewController: UIViewController {
 
